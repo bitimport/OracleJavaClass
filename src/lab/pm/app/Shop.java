@@ -38,9 +38,5 @@ public class Shop {
         Product p120 = pm.createProduct(120, "Sarbat", BigDecimal.valueOf(2.33), Rating.NOT_RATED);
         pm.reviewProduct(p120, Rating.FOUR_STAR, "Very traditional drink");
         pm.printProductReport();
-        
-        
-        
-        
     }
 }
