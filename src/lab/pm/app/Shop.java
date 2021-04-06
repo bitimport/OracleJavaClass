@@ -16,7 +16,7 @@ public class Shop {
 
         Product p8 =  new Drink(108, "BlueMoon", BigDecimal.valueOf(5.99), Rating.FIVE_STAR);
         Product p9 =  new Food(108, "Pizza", BigDecimal.valueOf(5.99), Rating.FIVE_STAR, LocalDate.now());
-
+        Product p10 =  new Drink(110, "Margerita", BigDecimal.valueOf(12),Rating.FOUR_STAR);
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
@@ -24,6 +24,8 @@ public class Shop {
 
         System.out.println(p8);
         System.out.println(p9);
+        System.out.println(p10);
+        
 
         System.out.println(Ratable.covert(8).getStars());
 
@@ -32,6 +34,13 @@ public class Shop {
         Product pp = pm.createProduct(1003,"MyProduct", BigDecimal.valueOf(15.08),Rating.THREE_STAR, LocalDate.now().plusDays(5));
         pm.reviewProduct(pp, Rating.FIVE_STAR, "MY NICE PRODUCT");
         pm.printProductReport();
-
+        
+        Product p120 = pm.createProduct(120, "Sarbat", BigDecimal.valueOf(2.33), Rating.NOT_RATED);
+        pm.reviewProduct(p120, Rating.FOUR_STAR, "Very traditional drink");
+        pm.printProductReport();
+        
+        
+        
+        
     }
 }
